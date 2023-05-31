@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: cplastic
+    working_dir: /var/www
+    ports:
+      - 80:8080    
+    command: npm start
+    restart: always
